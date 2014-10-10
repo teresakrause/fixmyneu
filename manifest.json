@@ -1,0 +1,13 @@
+{
+  "name": "Fix MyNeu",
+  "description": "Fix MyNeu",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": ["http://myneu.neu.edu/*"],
+      "css": ["myneu.css"],
+      "js": ["myneu.js"]
+    }
+  ],
+  "manifest_version": 2
+}
