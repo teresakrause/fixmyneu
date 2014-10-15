@@ -7,11 +7,32 @@
     background-color: #FFFFFF !important;
 }
 
+/** Haven't found bg2 yet
 .bg2 {
     background-color: #FF00FF !important;
 }
+**/
 
 /** Make the bars on tables Northeastern Red**/
 .bg3 {
+    background-color: #CC0000 !important;
+}
+
+
+
+/** Tab Coloring **/
+a {
+    color: #CC0000 !important;
+}
+
+.tabon a{
+    color: #FFFFFF !important;
+}
+
+.bgtabon {
+    background-color: #CC0000 !important;
+}
+
+td.tabon {
     background-color: #CC0000 !important;
 }

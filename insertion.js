@@ -11,7 +11,13 @@ var script1 = document.createElement('script');
 script1.src = ext_url + 'myneu.js';
 head.appendChild(script1);
 
-
+function makeBannerButton(image_url, link_url) {
+    var a =
+        "<a href='" + link_url + "'>" +
+        "<img src='" + image_url + "'>" +
+        "</a>";
+    return a;
+}
 
 
 $(document).ready(function(){
@@ -22,4 +28,21 @@ $(document).ready(function(){
 
     //Replace banner
     $("img[title='Portal Logo']").attr("src", ext_url + "images/Northeastern_Univ_Logotype.png");
+
+    //Insert new exciting things into the header
+    //Link to COOL
+    var coolCell = makeBannerButton(
+        ext_url + "images/cat.jpeg",
+        "http://myneu.neu.edu/cp/ip/login?sys=pp&url=https://www.cool.neu.edu/students/mainmenu.aspx"
+        );
+
+    $("td[class='bg1']").append(coolCell);
+
+    var googleCell = makeBannerButton(
+        ext_url + "images/cat.jpeg",
+        "http://google.com"
+    );
+    $("td[class='bg1']").append(googleCell);
+
+
 })
