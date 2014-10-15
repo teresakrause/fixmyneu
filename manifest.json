@@ -4,10 +4,20 @@
   "version": "0.0.1",
   "content_scripts": [
     {
-      "matches": ["http://myneu.neu.edu/*"],
-      "css": ["myneu.css"],
-      "js": ["myneu.js"]
+        "matches": ["http://myneu.neu.edu/*"],
+        "css": ["myneu.css"],
+        "js": ["jquery-2.1.1.min.js", "insertion.js"]
+    },
+    {
+      "matches": ["http://myneu.neu.edu/cp/home/displaylogin"],
+      "css": ["loginpage.css"],
+      "js": ["jquery-2.1.1.min.js", "loginpage.js"]
     }
+  ],
+  "web_accessible_resources": [
+      "myneu.js",
+      "jquery-2.1.1.min.js",
+      "images/*"
   ],
   "manifest_version": 2
 }
