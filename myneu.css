@@ -18,11 +18,18 @@
     background-color: #CC0000 !important;
 }
 
-
-
-/** Tab Coloring **/
+/** Make links Northeastern Red **/
 a {
     color: #CC0000 !important;
+}
+
+/** Tab Coloring **/
+.tabon {
+    background-image: none !important;
+}
+
+.taboff {
+    background-image: none !important;
 }
 
 .tabon a{
@@ -35,4 +42,9 @@ a {
 
 td.tabon {
     background-color: #CC0000 !important;
+    height: 30px !important;
+}
+
+i {
+    margin: 10px !important;
 }

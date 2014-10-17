@@ -5,19 +5,27 @@
   "content_scripts": [
     {
         "matches": ["http://myneu.neu.edu/*"],
-        "css": ["myneu.css"],
+        "css": ["myneu.css", "font-awesome.min.css"],
         "js": ["jquery-2.1.1.min.js", "insertion.js"]
     },
     {
       "matches": ["http://myneu.neu.edu/cp/home/displaylogin"],
       "css": ["loginpage.css"],
       "js": ["jquery-2.1.1.min.js", "loginpage.js"]
+  },
+    {
+      "matches": ["https://wl11gp.neu.edu/*"],
+      "css": ["myneu.css"],
+      "js": ["jquery-2.1.1.min.js", "schedule.js"]
     }
+
+
   ],
   "web_accessible_resources": [
       "myneu.js",
       "jquery-2.1.1.min.js",
-      "images/*"
+      "images/*",
+      "fonts/*"
   ],
   "manifest_version": 2
 }
