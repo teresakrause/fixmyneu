@@ -6,7 +6,10 @@
     {
         "matches": ["http://myneu.neu.edu/*"],
         "css": ["myneu.css", "font-awesome.min.css"],
-        "js": ["jquery-2.1.1.min.js", "insertion.js"]
+        "js": ["jquery-2.1.1.min.js",
+          "functions.js",
+          "homepage_insertion.js",
+          "homepage_init.js"]
     },
     {
       "matches": ["http://myneu.neu.edu/cp/home/displaylogin"],

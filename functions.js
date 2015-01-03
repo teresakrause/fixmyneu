@@ -8,12 +8,9 @@ function makeAwesomeButton(fontname, link_url) {
 }
 
 //Remove minimize/ maximize buttons from each table
-
-/*
 function removeFocusButtons() {
     $("img[src='/media/org/jasig/portal/layout/dlm/skins/classic/controls/focus.gif']").each(function(i, e) {
         e.parentElement.parentElement.remove();
     });
 }
 
-    */
