@@ -14,3 +14,9 @@ function removeFocusButtons() {
     });
 }
 
+//Remove right corner tab?!
+function removeCornerTab() {
+    $("img[src='/wtlgifs/web_tab_corner_right.gif']").each(function (i, e) {
+        e.remove();
+    });
+}
