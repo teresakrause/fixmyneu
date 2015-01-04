@@ -19,7 +19,7 @@
     {
       "matches": ["https://wl11gp.neu.edu/*"],
       "css": ["myneu.css"],
-      "js": ["jquery-2.1.1.min.js", "schedule.js"]
+      "js": ["jquery-2.1.1.min.js", "schedule.js", "functions.js"]
     },
     {
       "matches": ["http://myneu.neu.edu/jsp/misc/serverFailure.jsp"],
