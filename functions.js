@@ -7,19 +7,25 @@ function makeBookmarkBar() {
             advising: false
         },
         function (settings) {
-            $("img[title='Portal Logo']").replaceWith(
-                "<table id='bookmark_bar'><tr>" +
-                "<td><img src='"+ext_url+"images/myNEU_banner.png' /></td>"+
-                + makeAllAwesomeButtons(settings) +
-                "</tr></table>"
-            );
+            var buttons = makeAllAwesomeButtons(settings);
+            var bookmarkBar =
+                "<table id='bookmark_bar'>" +
+                    "<tr>"
+                        +
+                        "<td><img src='"+ext_url+"images/myNEU_banner.png' /></td>"
+                        +
+                        buttons
+                        +
+                    "</tr>"
+                    +
+                "</table>";
+            $("img[title='Portal Logo']").replaceWith(bookmarkBar);
         }
     )
 }
 
 //Make the Bookmarks buttons... now with settings!
 function makeAllAwesomeButtons(settings) {
-    console.log(settings);
     var result = "";
     if (settings.cool) {
         result = result + "<td>" +
@@ -47,13 +53,13 @@ function makeAllAwesomeButtons(settings) {
         result += "<td>" +
         makeAwesomeButton(
             "graduation-cap",
-            "http://myneu.neu.edu/cp/ip/login?sys=pp&url=https://www.cool.neu.edu/students/mainmenu.aspx"
+            "https://prod-web.neu.edu/wasapp/public/calendar/booking/app/secure/main.action?"
         ) + "</td>";
     }
     return result;
 }
 
-//Make a button with a given image and link
+//Make a button with a given font-awesome tag and link
 function makeAwesomeButton(fontname, link_url) {
     var a =
         "<a href='" + link_url + "'>" +
