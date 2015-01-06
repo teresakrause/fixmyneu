@@ -1,7 +1,15 @@
 {
   "name": "Fix MyNeu",
   "description": "Fix MyNeu",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
   "content_scripts": [
     {
         "matches": ["http://myneu.neu.edu/*"],

@@ -5,6 +5,6 @@
     $("img[title='NUPay']").attr("src", ext_url + "images/nupay_inactive.png");
 
     //Replace banner
-    $("img[title='Portal Logo']").replaceWith(makeBookmarkBar());
+    makeBookmarkBar();
     removeFocusButtons();
 })
