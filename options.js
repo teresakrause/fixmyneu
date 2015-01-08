@@ -54,6 +54,17 @@ function save_bookmarks_options() {
             }
         );
     }
+    if (document.getElementById('nupay').checked) {
+        settingsArray.push(
+            {
+                id : "nupay",
+                url: "https://commerce.cashnet.com/cashneta/selfserve/youraccount.aspx",
+                icon: "dollar"
+            }
+        );
+    }
+
+
     chrome.storage.sync.set({ settings: settingsArray}, function() {
         // Update status to let user know options were saved.
         var status = document.getElementById('status');
