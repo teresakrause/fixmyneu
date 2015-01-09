@@ -1,4 +1,4 @@
 $(document).ready(function(){
-    $('#term_id').val("201530");
+    setDefaultOption("#term_id", "201530");
     removeCornerTab();
 });

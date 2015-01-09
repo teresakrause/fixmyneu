@@ -2,9 +2,7 @@
   "name": "Fix MyNeu",
   "description": "Fix MyNeu",
   "version": "0.0.2",
-  "permissions": [
-    "storage"
-  ],
+  "permissions": ["storage"],
   "options_page": "options.html",
   "options_ui": {
     "page": "options.html",

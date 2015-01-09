@@ -50,3 +50,7 @@ function removeCornerTab() {
         e.remove();
     });
 }
+
+function setDefaultOption(selector, default_option) {
+    $(selector).val(default_option);
+}
