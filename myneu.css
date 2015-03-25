@@ -44,3 +44,7 @@ td.tabon {
 i {
     margin: 10px !important;
 }
+
+b.withdraw-text {
+    background-color: #FF8800 !important;
+}
