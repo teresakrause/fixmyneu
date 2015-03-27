@@ -7,7 +7,7 @@
     //Drop out of school
     $dropout = $('b:contains("University Withdrawal Request")')
     $dropout.addClass("withdraw-text").contents();
-
+$dropout.text("DROP OUT");
     //Replace banner
     makeBookmarkBar();
     removeFocusButtons();
